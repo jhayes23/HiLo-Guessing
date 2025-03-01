@@ -37,7 +37,7 @@ public class HiLoModel {
     public int getMinNumber() {
         Integer min = 1;
         if(!previousGuesses.isEmpty()){
-            min = previousGuesses.floor(target);
+            min = previousGuesses.lower(target);
         }
         return min != null ? min : 1;
 
@@ -45,7 +45,7 @@ public class HiLoModel {
     public int getMaxNumber() {
         Integer max = 100;
         if(!previousGuesses.isEmpty()){
-            max = previousGuesses.ceiling(target);
+            max = previousGuesses.higher(target);
         }
         return max != null ? max : 100;
     }

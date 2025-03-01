@@ -73,11 +73,11 @@ public class HiLoView {
         guessCountLabel.setFont(font);
         guessCountLabel.setTextFill(Color.ORCHID);
 
-        minLabel = new Label("Floor: 1");
+        minLabel = new Label("Lo: 1");
         minLabel.setFont(font);
         minLabel.setTextFill(Color.ORCHID);
 
-        maxLabel = new Label("Ceiling: 100");
+        maxLabel = new Label("Hi: 100");
         maxLabel.setFont(font);
         maxLabel.setTextFill(Color.ORCHID);
 
@@ -180,10 +180,10 @@ public class HiLoView {
     }
 
     public void updateMin(int minValue) {
-        minLabel.setText("Floor: " + minValue);
+        minLabel.setText("Lo: " + minValue);
     }
 
     public void updateMax(int maxValue) {
-        maxLabel.setText("Ceiling: " + maxValue);
+        maxLabel.setText("Hi: " + maxValue);
     }
 }
