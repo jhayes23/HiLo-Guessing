@@ -16,7 +16,6 @@ public class HiLoModel {
             previousGuesses.clear();
         }
         target = randominator.nextInt(100) + 1;
-        System.out.println("Generated New number: " + target);
     }
 
     public boolean checkNumber(int number) {
